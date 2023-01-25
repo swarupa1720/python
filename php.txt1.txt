@@ -1,0 +1,45 @@
+<?php
+
+//class definition
+class Person {
+   public $firstname;
+   public $lastname;
+   
+   function __construct($firstname, $lastname){
+       $this->firstname = $firstname;
+       $this->lastname = $lastname;
+   }
+   
+   function get_firstname(){
+       print $this->firstname;
+   }
+   
+    function get_lastname(){
+       print $this->lastname;
+   }
+}
+
+$swarupa = new person("Nathewar", "swarupa");
+echo $swarupa->get_firstname();
+echo " ";
+echo $swarupa->get_lastname();
+echo " ";
+$swarupa = new person("leela", "sai");
+echo $swarupa->get_firstname();
+echo " ";
+echo $swarupa->get_lastname();
+echo " ";
+$swarupa = new person("Nathewar", "sowmya");
+echo $swarupa->get_firstname();
+echo " ";
+echo $swarupa->get_lastname();
+echo " ";
+$swarupa = new person("sai", "charan");
+echo $swarupa->get_firstname();
+echo " ";
+echo $swarupa->get_lastname();
+
+?>
+
+
+
